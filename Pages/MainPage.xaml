@@ -1,0 +1,37 @@
+﻿<Page x:Class="WpfApp_DataBinding_EF.Pages.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+       xmlns:local="clr-namespace:WpfApp_DataBinding_EF"
+      Title="MainPage" Height="800" Width="800">
+
+   <Grid Height="800" VerticalAlignment="Center" HorizontalAlignment="Right" Width="800">
+            <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Style="{StaticResource ButtonPanel}" HorizontalAlignment="Center">
+            <Button Content="Добавить" Click="GotoAdd" Style="{StaticResource AddButton}"/>
+            <Button Content="Изменить" Click="GotoEdit"/>
+            <Button Content="Удалить" Click="DeleteUser" Style="{StaticResource DeleteButton}"/>
+        </StackPanel>
+
+        <Border Grid.Row="1" Style="{StaticResource BorderContainer}">
+            <ListView ItemsSource="{Binding Users}"
+                      SelectedItem="{Binding SelectedUser}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+                            <TextBlock Text="{Binding Login}"/>
+                            <TextBlock Text="{Binding Name}"/>
+                            <TextBlock Text="{Binding Email}"/>
+                            <TextBlock Text="{Binding CreatedAt, StringFormat='{}{0:dd.MM.yyyy HH:mm}'}"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Border>
+
+    </Grid>
+</Page>

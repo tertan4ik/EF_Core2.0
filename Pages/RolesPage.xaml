@@ -1,0 +1,65 @@
+﻿<Page x:Class="WpfApp_DataBinding_EF.Pages.RolesPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:local="clr-namespace:WpfApp_DataBinding_EF.Pages"
+      Title="RolesPage">
+
+    <Grid Height="506" Width="632" VerticalAlignment="Top">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- верхняя панель -->
+        <StackPanel Orientation="Horizontal"
+                    Style="{StaticResource ButtonPanel}" Height="40" Margin="0,10,0,0" VerticalAlignment="Top">
+            <Button Content="Назад"
+                    Click="Back" />
+        </StackPanel>
+
+        <!-- основная часть: слева роли, справа пользователи -->
+        <Grid Grid.Row="1" Margin="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="3*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- список ролей -->
+            <Border Grid.Column="0"
+                    Style="{StaticResource BorderContainer}">
+                <ListView x:Name="RolesList"
+                          ItemsSource="{Binding service.Roles}"
+                          SelectionChanged="RolesList_SelectionChanged" Height="390" Margin="0,10,0,0" VerticalAlignment="Top">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Title}" />
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </Border>
+
+            <!-- список пользователей выбранной роли -->
+            <Border Grid.Column="1"
+                    Style="{StaticResource BorderContainer}">
+                <StackPanel Height="400" VerticalAlignment="Top">
+                    <TextBlock Text="Пользователи роли"
+                               FontWeight="Bold"
+                               Margin="0,0,0,8"/>
+
+                    <ListView x:Name="UsersList">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel>
+                                    <TextBlock Text="{Binding Login}" />
+                                    <TextBlock Text="{Binding Name}" />
+                                    <TextBlock Text="{Binding Email}" />
+                                    <Separator/>
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackPanel>
+            </Border>
+        </Grid>
+    </Grid>
+</Page>

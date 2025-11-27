@@ -1,0 +1,488 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\st310-06\\Desktop\\Eremeev\\EF_Core\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{84D96BA1-6C13-457A-BD09-7ACA1AC8E7E4}|WpfApp_DataBinding_EF.csproj|c:\\users\\st310-06\\desktop\\eremeev\\ef_core\\services\\usersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84D96BA1-6C13-457A-BD09-7ACA1AC8E7E4}|WpfApp_DataBinding_EF.csproj|solutionrelative:services\\usersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84D96BA1-6C13-457A-BD09-7ACA1AC8E7E4}|WpfApp_DataBinding_EF.csproj|c:\\users\\st310-06\\desktop\\eremeev\\ef_core\\models\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84D96BA1-6C13-457A-BD09-7ACA1AC8E7E4}|WpfApp_DataBinding_EF.csproj|solutionrelative:models\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84D96BA1-6C13-457A-BD09-7ACA1AC8E7E4}|WpfApp_DataBinding_EF.csproj|c:\\users\\st310-06\\desktop\\eremeev\\ef_core\\pages\\userformpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84D96BA1-6C13-457A-BD09-7ACA1AC8E7E4}|WpfApp_DataBinding_EF.csproj|solutionrelative:pages\\userformpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84D96BA1-6C13-457A-BD09-7ACA1AC8E7E4}|WpfApp_DataBinding_EF.csproj|c:\\users\\st310-06\\desktop\\eremeev\\ef_core\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84D96BA1-6C13-457A-BD09-7ACA1AC8E7E4}|WpfApp_DataBinding_EF.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84D96BA1-6C13-457A-BD09-7ACA1AC8E7E4}|WpfApp_DataBinding_EF.csproj|c:\\users\\st310-06\\desktop\\eremeev\\ef_core\\services\\rolesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84D96BA1-6C13-457A-BD09-7ACA1AC8E7E4}|WpfApp_DataBinding_EF.csproj|solutionrelative:services\\rolesservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84D96BA1-6C13-457A-BD09-7ACA1AC8E7E4}|WpfApp_DataBinding_EF.csproj|c:\\users\\st310-06\\desktop\\eremeev\\ef_core\\pages\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{84D96BA1-6C13-457A-BD09-7ACA1AC8E7E4}|WpfApp_DataBinding_EF.csproj|solutionrelative:pages\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84D96BA1-6C13-457A-BD09-7ACA1AC8E7E4}|WpfApp_DataBinding_EF.csproj|c:\\users\\st310-06\\desktop\\eremeev\\ef_core\\pages\\rolespage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{84D96BA1-6C13-457A-BD09-7ACA1AC8E7E4}|WpfApp_DataBinding_EF.csproj|solutionrelative:pages\\rolespage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84D96BA1-6C13-457A-BD09-7ACA1AC8E7E4}|WpfApp_DataBinding_EF.csproj|c:\\users\\st310-06\\desktop\\eremeev\\ef_core\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84D96BA1-6C13-457A-BD09-7ACA1AC8E7E4}|WpfApp_DataBinding_EF.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84D96BA1-6C13-457A-BD09-7ACA1AC8E7E4}|WpfApp_DataBinding_EF.csproj|c:\\users\\st310-06\\desktop\\eremeev\\ef_core\\models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84D96BA1-6C13-457A-BD09-7ACA1AC8E7E4}|WpfApp_DataBinding_EF.csproj|solutionrelative:models\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84D96BA1-6C13-457A-BD09-7ACA1AC8E7E4}|WpfApp_DataBinding_EF.csproj|c:\\users\\st310-06\\desktop\\eremeev\\ef_core\\pages\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84D96BA1-6C13-457A-BD09-7ACA1AC8E7E4}|WpfApp_DataBinding_EF.csproj|solutionrelative:pages\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84D96BA1-6C13-457A-BD09-7ACA1AC8E7E4}|WpfApp_DataBinding_EF.csproj|c:\\users\\st310-06\\desktop\\eremeev\\ef_core\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84D96BA1-6C13-457A-BD09-7ACA1AC8E7E4}|WpfApp_DataBinding_EF.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84D96BA1-6C13-457A-BD09-7ACA1AC8E7E4}|WpfApp_DataBinding_EF.csproj|c:\\users\\st310-06\\desktop\\eremeev\\ef_core\\pages\\rolespage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84D96BA1-6C13-457A-BD09-7ACA1AC8E7E4}|WpfApp_DataBinding_EF.csproj|solutionrelative:pages\\rolespage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84D96BA1-6C13-457A-BD09-7ACA1AC8E7E4}|WpfApp_DataBinding_EF.csproj|c:\\users\\st310-06\\desktop\\eremeev\\ef_core\\pages\\userformpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{84D96BA1-6C13-457A-BD09-7ACA1AC8E7E4}|WpfApp_DataBinding_EF.csproj|solutionrelative:pages\\userformpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84D96BA1-6C13-457A-BD09-7ACA1AC8E7E4}|WpfApp_DataBinding_EF.csproj|c:\\users\\st310-06\\desktop\\eremeev\\ef_core\\styles\\button.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{84D96BA1-6C13-457A-BD09-7ACA1AC8E7E4}|WpfApp_DataBinding_EF.csproj|solutionrelative:styles\\button.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84D96BA1-6C13-457A-BD09-7ACA1AC8E7E4}|WpfApp_DataBinding_EF.csproj|c:\\users\\st310-06\\desktop\\eremeev\\ef_core\\validators\\emailvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84D96BA1-6C13-457A-BD09-7ACA1AC8E7E4}|WpfApp_DataBinding_EF.csproj|solutionrelative:validators\\emailvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\st310-06\\Desktop\\Eremeev\\EF_Core\\Migrations\\20251127083247_recreatedatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20251127083247_recreatedatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84D96BA1-6C13-457A-BD09-7ACA1AC8E7E4}|WpfApp_DataBinding_EF.csproj|c:\\users\\st310-06\\desktop\\eremeev\\ef_core\\styles\\text.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{84D96BA1-6C13-457A-BD09-7ACA1AC8E7E4}|WpfApp_DataBinding_EF.csproj|solutionrelative:styles\\text.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84D96BA1-6C13-457A-BD09-7ACA1AC8E7E4}|WpfApp_DataBinding_EF.csproj|c:\\users\\st310-06\\desktop\\eremeev\\ef_core\\styles\\panels.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{84D96BA1-6C13-457A-BD09-7ACA1AC8E7E4}|WpfApp_DataBinding_EF.csproj|solutionrelative:styles\\panels.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84D96BA1-6C13-457A-BD09-7ACA1AC8E7E4}|WpfApp_DataBinding_EF.csproj|c:\\users\\st310-06\\desktop\\eremeev\\ef_core\\services\\basedbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84D96BA1-6C13-457A-BD09-7ACA1AC8E7E4}|WpfApp_DataBinding_EF.csproj|solutionrelative:services\\basedbservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\st310-06\\AppData\\Local\\Temp\\.vsdbgsrc\\b08c81f28248eb707f169a196825242ec1a61785e390573d2392958602d29bb8\\MainPage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84D96BA1-6C13-457A-BD09-7ACA1AC8E7E4}|WpfApp_DataBinding_EF.csproj|c:\\users\\st310-06\\desktop\\eremeev\\ef_core\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{84D96BA1-6C13-457A-BD09-7ACA1AC8E7E4}|WpfApp_DataBinding_EF.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84D96BA1-6C13-457A-BD09-7ACA1AC8E7E4}|WpfApp_DataBinding_EF.csproj|c:\\users\\st310-06\\desktop\\eremeev\\ef_core\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{84D96BA1-6C13-457A-BD09-7ACA1AC8E7E4}|WpfApp_DataBinding_EF.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84D96BA1-6C13-457A-BD09-7ACA1AC8E7E4}|WpfApp_DataBinding_EF.csproj|c:\\users\\st310-06\\desktop\\eremeev\\ef_core\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84D96BA1-6C13-457A-BD09-7ACA1AC8E7E4}|WpfApp_DataBinding_EF.csproj|solutionrelative:assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\st310-06\\Desktop\\Eremeev\\EF_Core\\WpfApp_DataBinding_EF.csproj.user||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WpfApp_DataBinding_EF.csproj.user||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84D96BA1-6C13-457A-BD09-7ACA1AC8E7E4}|WpfApp_DataBinding_EF.csproj|c:\\users\\st310-06\\desktop\\eremeev\\ef_core\\validators\\passwordvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84D96BA1-6C13-457A-BD09-7ACA1AC8E7E4}|WpfApp_DataBinding_EF.csproj|solutionrelative:validators\\passwordvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84D96BA1-6C13-457A-BD09-7ACA1AC8E7E4}|WpfApp_DataBinding_EF.csproj|c:\\users\\st310-06\\desktop\\eremeev\\ef_core\\validators\\createdatvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84D96BA1-6C13-457A-BD09-7ACA1AC8E7E4}|WpfApp_DataBinding_EF.csproj|solutionrelative:validators\\createdatvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{84D96BA1-6C13-457A-BD09-7ACA1AC8E7E4}|WpfApp_DataBinding_EF.csproj|c:\\users\\st310-06\\desktop\\eremeev\\ef_core\\validators\\loginvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84D96BA1-6C13-457A-BD09-7ACA1AC8E7E4}|WpfApp_DataBinding_EF.csproj|solutionrelative:validators\\loginvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 15,
+          "SelectedChildIndex": 27,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "RolesPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\st310-06\\Desktop\\Eremeev\\EF_Core\\Pages\\RolesPage.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\RolesPage.xaml.cs",
+              "ToolTip": "C:\\Users\\st310-06\\Desktop\\Eremeev\\EF_Core\\Pages\\RolesPage.xaml.cs",
+              "RelativeToolTip": "Pages\\RolesPage.xaml.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA1wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T09:48:43.926Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "20251127083247_recreatedatabase.cs",
+              "DocumentMoniker": "C:\\Users\\st310-06\\Desktop\\Eremeev\\EF_Core\\Migrations\\20251127083247_recreatedatabase.cs",
+              "RelativeDocumentMoniker": "Migrations\\20251127083247_recreatedatabase.cs",
+              "ToolTip": "C:\\Users\\st310-06\\Desktop\\Eremeev\\EF_Core\\Migrations\\20251127083247_recreatedatabase.cs",
+              "RelativeToolTip": "Migrations\\20251127083247_recreatedatabase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T08:32:47.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Microsoft.Common.CurrentVersion.targets",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ViewState": "AgIAAPQWAAAAAAAAAAAkwPgWAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-11-27T08:22:19.476Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RolesService.cs",
+              "DocumentMoniker": "C:\\Users\\st310-06\\Desktop\\Eremeev\\EF_Core\\Services\\RolesService.cs",
+              "RelativeDocumentMoniker": "Services\\RolesService.cs",
+              "ToolTip": "C:\\Users\\st310-06\\Desktop\\Eremeev\\EF_Core\\Services\\RolesService.cs",
+              "RelativeToolTip": "Services\\RolesService.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T08:20:30.907Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "BaseDbService.cs",
+              "DocumentMoniker": "C:\\Users\\st310-06\\Desktop\\Eremeev\\EF_Core\\Services\\BaseDbService.cs",
+              "RelativeDocumentMoniker": "Services\\BaseDbService.cs",
+              "ToolTip": "C:\\Users\\st310-06\\Desktop\\Eremeev\\EF_Core\\Services\\BaseDbService.cs",
+              "RelativeToolTip": "Services\\BaseDbService.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T08:20:27.638Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "MainPage.cs",
+              "DocumentMoniker": "C:\\Users\\st310-06\\AppData\\Local\\Temp\\.vsdbgsrc\\b08c81f28248eb707f169a196825242ec1a61785e390573d2392958602d29bb8\\MainPage.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\b08c81f28248eb707f169a196825242ec1a61785e390573d2392958602d29bb8\\MainPage.cs",
+              "ToolTip": "C:\\Users\\st310-06\\AppData\\Local\\Temp\\.vsdbgsrc\\b08c81f28248eb707f169a196825242ec1a61785e390573d2392958602d29bb8\\MainPage.cs [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\b08c81f28248eb707f169a196825242ec1a61785e390573d2392958602d29bb8\\MainPage.cs [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAQwBMAAAABAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T08:12:01.892Z",
+              "EditorCaption": " [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\st310-06\\Desktop\\Eremeev\\EF_Core\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\st310-06\\Desktop\\Eremeev\\EF_Core\\AssemblyInfo.cs",
+              "RelativeToolTip": "AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T08:02:55.503Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "RolesPage.xaml",
+              "DocumentMoniker": "C:\\Users\\st310-06\\Desktop\\Eremeev\\EF_Core\\Pages\\RolesPage.xaml",
+              "RelativeDocumentMoniker": "Pages\\RolesPage.xaml",
+              "ToolTip": "C:\\Users\\st310-06\\Desktop\\Eremeev\\EF_Core\\Pages\\RolesPage.xaml",
+              "RelativeToolTip": "Pages\\RolesPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-27T07:46:10.958Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "WpfApp_DataBinding_EF.csproj.user",
+              "DocumentMoniker": "C:\\Users\\st310-06\\Desktop\\Eremeev\\EF_Core\\WpfApp_DataBinding_EF.csproj.user",
+              "RelativeDocumentMoniker": "WpfApp_DataBinding_EF.csproj.user",
+              "ToolTip": "C:\\Users\\st310-06\\Desktop\\Eremeev\\EF_Core\\WpfApp_DataBinding_EF.csproj.user",
+              "RelativeToolTip": "WpfApp_DataBinding_EF.csproj.user",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003464|",
+              "WhenOpened": "2025-11-27T07:43:54.109Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Role.cs",
+              "DocumentMoniker": "C:\\Users\\st310-06\\Desktop\\Eremeev\\EF_Core\\Models\\Role.cs",
+              "RelativeDocumentMoniker": "Models\\Role.cs",
+              "ToolTip": "C:\\Users\\st310-06\\Desktop\\Eremeev\\EF_Core\\Models\\Role.cs",
+              "RelativeToolTip": "Models\\Role.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T07:39:41.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserProfile.cs",
+              "DocumentMoniker": "C:\\Users\\st310-06\\Desktop\\Eremeev\\EF_Core\\Models\\UserProfile.cs",
+              "RelativeDocumentMoniker": "Models\\UserProfile.cs",
+              "ToolTip": "C:\\Users\\st310-06\\Desktop\\Eremeev\\EF_Core\\Models\\UserProfile.cs",
+              "RelativeToolTip": "Models\\UserProfile.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAowGEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T07:39:41.17Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\st310-06\\Desktop\\Eremeev\\EF_Core\\Pages\\MainPage.xaml",
+              "RelativeDocumentMoniker": "Pages\\MainPage.xaml",
+              "ToolTip": "C:\\Users\\st310-06\\Desktop\\Eremeev\\EF_Core\\Pages\\MainPage.xaml",
+              "RelativeToolTip": "Pages\\MainPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-27T07:39:41.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UserFormPage.xaml",
+              "DocumentMoniker": "C:\\Users\\st310-06\\Desktop\\Eremeev\\EF_Core\\Pages\\UserFormPage.xaml",
+              "RelativeDocumentMoniker": "Pages\\UserFormPage.xaml",
+              "ToolTip": "C:\\Users\\st310-06\\Desktop\\Eremeev\\EF_Core\\Pages\\UserFormPage.xaml",
+              "RelativeToolTip": "Pages\\UserFormPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-27T07:39:41.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Emailvalidation.cs",
+              "DocumentMoniker": "C:\\Users\\st310-06\\Desktop\\Eremeev\\EF_Core\\Validators\\Emailvalidation.cs",
+              "RelativeDocumentMoniker": "Validators\\Emailvalidation.cs",
+              "ToolTip": "C:\\Users\\st310-06\\Desktop\\Eremeev\\EF_Core\\Validators\\Emailvalidation.cs",
+              "RelativeToolTip": "Validators\\Emailvalidation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T07:39:41.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Text.xaml",
+              "DocumentMoniker": "C:\\Users\\st310-06\\Desktop\\Eremeev\\EF_Core\\Styles\\Text.xaml",
+              "RelativeDocumentMoniker": "Styles\\Text.xaml",
+              "ToolTip": "C:\\Users\\st310-06\\Desktop\\Eremeev\\EF_Core\\Styles\\Text.xaml",
+              "RelativeToolTip": "Styles\\Text.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-27T07:39:41.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\st310-06\\Desktop\\Eremeev\\EF_Core\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MainWindow.xaml",
+              "ToolTip": "C:\\Users\\st310-06\\Desktop\\Eremeev\\EF_Core\\MainWindow.xaml",
+              "RelativeToolTip": "MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-27T07:39:41.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Button.xaml",
+              "DocumentMoniker": "C:\\Users\\st310-06\\Desktop\\Eremeev\\EF_Core\\Styles\\Button.xaml",
+              "RelativeDocumentMoniker": "Styles\\Button.xaml",
+              "ToolTip": "C:\\Users\\st310-06\\Desktop\\Eremeev\\EF_Core\\Styles\\Button.xaml",
+              "RelativeToolTip": "Styles\\Button.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-27T07:39:41.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Panels.xaml",
+              "DocumentMoniker": "C:\\Users\\st310-06\\Desktop\\Eremeev\\EF_Core\\Styles\\Panels.xaml",
+              "RelativeDocumentMoniker": "Styles\\Panels.xaml",
+              "ToolTip": "C:\\Users\\st310-06\\Desktop\\Eremeev\\EF_Core\\Styles\\Panels.xaml",
+              "RelativeToolTip": "Styles\\Panels.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-27T07:39:41.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Passwordvalidation.cs",
+              "DocumentMoniker": "C:\\Users\\st310-06\\Desktop\\Eremeev\\EF_Core\\Validators\\Passwordvalidation.cs",
+              "RelativeDocumentMoniker": "Validators\\Passwordvalidation.cs",
+              "ToolTip": "C:\\Users\\st310-06\\Desktop\\Eremeev\\EF_Core\\Validators\\Passwordvalidation.cs",
+              "RelativeToolTip": "Validators\\Passwordvalidation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwBkAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T07:39:41.186Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "CreatedAtValidation.cs",
+              "DocumentMoniker": "C:\\Users\\st310-06\\Desktop\\Eremeev\\EF_Core\\Validators\\CreatedAtValidation.cs",
+              "RelativeDocumentMoniker": "Validators\\CreatedAtValidation.cs",
+              "ToolTip": "C:\\Users\\st310-06\\Desktop\\Eremeev\\EF_Core\\Validators\\CreatedAtValidation.cs",
+              "RelativeToolTip": "Validators\\CreatedAtValidation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T07:39:41.202Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Loginvalidation.cs",
+              "DocumentMoniker": "C:\\Users\\st310-06\\Desktop\\Eremeev\\EF_Core\\Validators\\Loginvalidation.cs",
+              "RelativeDocumentMoniker": "Validators\\Loginvalidation.cs",
+              "ToolTip": "C:\\Users\\st310-06\\Desktop\\Eremeev\\EF_Core\\Validators\\Loginvalidation.cs",
+              "RelativeToolTip": "Validators\\Loginvalidation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T07:39:41.202Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\st310-06\\Desktop\\Eremeev\\EF_Core\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\st310-06\\Desktop\\Eremeev\\EF_Core\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MainWindow.xaml.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAD4vxUAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T07:39:41.202Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\st310-06\\Desktop\\Eremeev\\EF_Core\\App.xaml",
+              "RelativeDocumentMoniker": "App.xaml",
+              "ToolTip": "C:\\Users\\st310-06\\Desktop\\Eremeev\\EF_Core\\App.xaml",
+              "RelativeToolTip": "App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-27T07:39:41.202Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\st310-06\\Desktop\\Eremeev\\EF_Core\\Pages\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\st310-06\\Desktop\\Eremeev\\EF_Core\\Pages\\MainPage.xaml.cs",
+              "RelativeToolTip": "Pages\\MainPage.xaml.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAvwBwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T07:39:41.202Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserFormPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\st310-06\\Desktop\\Eremeev\\EF_Core\\Pages\\UserFormPage.xaml.cs",
+              "RelativeDocumentMoniker": "Pages\\UserFormPage.xaml.cs",
+              "ToolTip": "C:\\Users\\st310-06\\Desktop\\Eremeev\\EF_Core\\Pages\\UserFormPage.xaml.cs",
+              "RelativeToolTip": "Pages\\UserFormPage.xaml.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAjwIIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T07:39:41.202Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UsersService.cs",
+              "DocumentMoniker": "C:\\Users\\st310-06\\Desktop\\Eremeev\\EF_Core\\Services\\UsersService.cs",
+              "RelativeDocumentMoniker": "Services\\UsersService.cs",
+              "ToolTip": "C:\\Users\\st310-06\\Desktop\\Eremeev\\EF_Core\\Services\\UsersService.cs",
+              "RelativeToolTip": "Services\\UsersService.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAADgv0gAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T07:39:41.202Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\st310-06\\Desktop\\Eremeev\\EF_Core\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\st310-06\\Desktop\\Eremeev\\EF_Core\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "Data\\AppDbContext.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAIA8wCkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T07:39:41.217Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\st310-06\\Desktop\\Eremeev\\EF_Core\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "C:\\Users\\st310-06\\Desktop\\Eremeev\\EF_Core\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAArwGAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-27T07:39:41.217Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

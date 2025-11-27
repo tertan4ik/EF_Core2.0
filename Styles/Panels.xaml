@@ -1,0 +1,24 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Панель -->
+    <Style x:Key="MainPanel" TargetType="StackPanel">
+        <Setter Property="Margin" Value="16"/>
+    </Style>
+
+    <!-- Панель кнопок -->
+    <Style x:Key="ButtonPanel" TargetType="StackPanel">
+        <Setter Property="Orientation" Value="Horizontal"/>
+        <Setter Property="HorizontalAlignment" Value="Center"/>
+        <Setter Property="Margin" Value="10"/>
+    </Style>
+
+    <!-- Контейнер вокруг списка -->
+    <Style x:Key="BorderContainer" TargetType="Border">
+        <Setter Property="Padding" Value="12"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="BorderBrush" Value="#DDD"/>
+        <Setter Property="CornerRadius" Value="4"/>
+    </Style>
+
+</ResourceDictionary>
