@@ -29,9 +29,9 @@ namespace WpfApp_DataBinding_EF.Data
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<User>() 
-            .HasOne(s => s.Userprofile)
-            .WithOne(ps => ps.User)
+            modelBuilder.Entity<UserProfile>() 
+            .HasOne(s => s.User)
+            .WithOne(ps => ps.Userprofile)
             .HasForeignKey<UserProfile>(ps => ps.Id);
 
             modelBuilder.Entity <Role>() 

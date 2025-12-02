@@ -4,15 +4,15 @@
 winexe
 C#
 .cs
-C:\Users\st310-06\Desktop\Eremeev\EF_Core\obj\Debug\net8.0-windows\
+C:\Users\st310-06\Desktop\Новая папка\EF_Core2.0\obj\Debug\net8.0-windows\
 WpfApp_DataBinding_EF
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
-C:\Users\st310-06\Desktop\Eremeev\EF_Core\App.xaml
+C:\Users\st310-06\Desktop\Новая папка\EF_Core2.0\App.xaml
 7-2138897291
 
-231841929933
+23-163144177
 231-774572965
 MainWindow.xaml;Pages\MainPage.xaml;Pages\RolesPage.xaml;Pages\UserFormPage.xaml;Styles\Button.xaml;Styles\Panels.xaml;Styles\Text.xaml;
 

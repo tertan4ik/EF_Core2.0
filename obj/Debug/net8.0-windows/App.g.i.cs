@@ -61,7 +61,7 @@ namespace WpfApp_DataBinding_EF {
             
             #line default
             #line hidden
-            System.Uri resourceLocater = new System.Uri("/WpfApp_DataBinding_EF;V1.0.0.0;component/app.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/WpfApp_DataBinding_EF;component/app.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\App.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

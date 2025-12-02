@@ -24,6 +24,21 @@ namespace WpfApp_DataBinding_EF.Models
             }
         }
 
+        private int _pid;
+        public int Pid
+        {
+            get => _pid;
+            set
+            {
+                if (_pid != value)
+                {
+                    _pid = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
+
         private int _role_id;
         public int Role_Id
         {

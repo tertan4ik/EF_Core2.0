@@ -58,13 +58,16 @@ namespace WpfApp_DataBinding_EF.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("pName")
+                    b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Password")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Pid")
+                        .HasColumnType("int");
 
                     b.Property<int>("Role_Id")
                         .HasColumnType("int");
@@ -92,7 +95,7 @@ namespace WpfApp_DataBinding_EF.Migrations
                     b.Property<DateTime>("Birthday")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("pName")
+                    b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

@@ -25,15 +25,6 @@ namespace WpfApp_DataBinding_EF.Services
 
         public void LoadUsers()
         {
-            Users.Clear();
-            foreach (var u in _db.Users.ToList())
-                Users.Add(u);
-        }
-
-        public int Commit() => _db.SaveChanges();
-
-        public void GetAll()
-        {
             var users = _db.Users
                 .Include(u => u.Role)
                 .Include(u => u.Userprofile)
@@ -44,6 +35,9 @@ namespace WpfApp_DataBinding_EF.Services
             foreach (var u in users)
                 Users.Add(u);
         }
+
+        public int Commit() => _db.SaveChanges();
+
 
   
 
@@ -83,7 +77,6 @@ namespace WpfApp_DataBinding_EF.Services
 
             Users.Add(entity);
         }
-
 
 
         public void UpdateUser(User formUser)

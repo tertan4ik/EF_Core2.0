@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zwC1VKCpPVU=",
+  "dgSpecHash": "JQE1YYlN8ls=",
   "success": true,
-  "projectFilePath": "C:\\Users\\st310-06\\Desktop\\Eremeev\\EF_Core\\WpfApp_DataBinding_EF.csproj",
+  "projectFilePath": "C:\\Users\\st310-06\\Desktop\\Новая папка\\EF_Core2.0\\WpfApp_DataBinding_EF.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\st310-06\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\st310-06\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

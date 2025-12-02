@@ -52,7 +52,7 @@ namespace WpfApp_DataBinding_EF.Pages
 
 
                 if (_user.Userprofile == null)
-                    _user.Userprofile = new UserProfile { Id = _user.Id };
+                    _user.Userprofile = new UserProfile { Id = _user.Pid };
        
                 _isEdit = true;
             }
@@ -115,21 +115,25 @@ namespace WpfApp_DataBinding_EF.Pages
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            string Avatarurl = _user.Userprofile.AvatarUrl;
-
-            if (Avatarurl != null)
+           try
             {
-                BitmapImage bitmap = new BitmapImage();
-                bitmap.BeginInit();
-                bitmap.UriSource = new Uri(Avatarurl, UriKind.Absolute);
-                bitmap.EndInit();
+                string Avatarurl = _user.Userprofile.AvatarUrl;
 
-                Avatar.Source = bitmap;
-                if (Avatar.Source == null)
+                if (Avatarurl != null)
                 {
-                    MessageBox.Show("dikbvslbvfs");
+                    BitmapImage bitmap = new BitmapImage();
+                    bitmap.BeginInit();
+                    bitmap.UriSource = new Uri(Avatarurl, UriKind.Absolute);
+                    bitmap.EndInit();
+
+                    Avatar.Source = bitmap;
+                    if (Avatar.Source == null)
+                    {
+                        MessageBox.Show("dikbvslbvfs");
+                    }
                 }
             }
+            catch { MessageBox.Show("Something wrong"); }
         }
 
 

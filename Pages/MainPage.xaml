@@ -22,12 +22,20 @@
                       SelectedItem="{Binding SelectedUser}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <StackPanel>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="2*"/>
+                                <ColumnDefinition Width="1*"/>
+                            </Grid.ColumnDefinitions>
+                        <StackPanel Grid.Column="0">
                             <TextBlock Text="{Binding Login}"/>
                             <TextBlock Text="{Binding Name}"/>
                             <TextBlock Text="{Binding Email}"/>
                             <TextBlock Text="{Binding CreatedAt, StringFormat='{}{0:dd.MM.yyyy HH:mm}'}"/>
                         </StackPanel>
+                            <Image/>
+
+                        </Grid>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
