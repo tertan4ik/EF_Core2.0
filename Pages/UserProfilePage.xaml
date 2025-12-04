@@ -50,7 +50,7 @@
                         <Image Width="120"
                                Height="120"
                                Margin="0,0,0,10"
-                               Stretch="UniformToFill"
+                               Stretch="Fill"
                                Source="{Binding Userprofile.AvatarUrl}"/>
 
                         <TextBlock Text="{Binding Name}"
@@ -111,7 +111,7 @@
                     <TextBlock Text="Модератор"  Margin="10,0,0,0"/>
                 </StackPanel>
 
-                <ListView ItemsSource="{Binding UserInterestGroups}">
+                <ListView ItemsSource="{Binding UserInterestGroups,UpdateSourceTrigger=PropertyChanged}" >
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <StackPanel Orientation="Horizontal">

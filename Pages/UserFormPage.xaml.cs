@@ -42,13 +42,14 @@ namespace WpfApp_DataBinding_EF.Pages
                     CreatedAt = DateTime.Now,
                     Userprofile = new UserProfile(),
                     Role_Id = 1
-                };       
-              
+                };
+                _user.Userprofile.AvatarUrl = "";
                 _isEdit = false;
             }
             else
             {
                 _user = editUser;
+           
 
 
                 if (_user.Userprofile == null)

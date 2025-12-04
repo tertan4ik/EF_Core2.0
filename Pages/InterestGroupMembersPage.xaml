@@ -11,7 +11,6 @@
     <Grid Margin="10">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
@@ -22,52 +21,71 @@
                     Margin="0,0,10,0"
                     Click="Back_Click"/>
             <TextBlock Text="{Binding Title}"
-                       FontSize="16"
-                       FontWeight="Bold"
                        VerticalAlignment="Center"/>
         </StackPanel>
 
-        <StackPanel Orientation="Horizontal" Grid.Row="1" Margin="0,0,0,3">
-            <TextBlock Text="ID" Width="60"/>
-            <TextBlock Text="Имя" Width="150" Margin="10,0,0,0"/>
-            <TextBlock Text="Логин" Width="120" Margin="10,0,0,0"/>
-            <TextBlock Text="Email" Width="200" Margin="10,0,0,0"/>
-            <TextBlock Text="Дата вступления" Width="120" Margin="10,0,0,0"/>
-            <TextBlock Text="Модератор" Width="80" Margin="10,0,0,0"/>
-        </StackPanel>
-      
-        <ListView Grid.Row="2"
-          ItemsSource="{Binding UserGroups}">
+        <!-- Заголовки + кнопка + список -->
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <!-- заголовки -->
+                <RowDefinition Height="Auto"/>
+                <!-- кнопка -->
+                <RowDefinition Height="*"/>
+                <!-- список -->
+            </Grid.RowDefinitions>
 
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <StackPanel Orientation="Horizontal">
-                        <TextBlock Text="{Binding User.Id}" Width="60"/>
+            <!-- Заголовки колонок -->
+            <StackPanel Orientation="Horizontal" Grid.Row="0" Margin="0,0,0,3">
+                <TextBlock Text="ID" Width="60"/>
+                <TextBlock Text="Имя" Width="150" Margin="10,0,0,0"/>
+                <TextBlock Text="Логин" Width="120" Margin="10,0,0,0"/>
+                <TextBlock Text="Email" Width="200" Margin="10,0,0,0"/>
+                <TextBlock Text="Дата вступления" Width="120" Margin="10,0,0,0"/>
+                <TextBlock Text="Модератор" Width="80" Margin="10,0,0,0"/>
+            </StackPanel>
 
-                        <TextBlock Text="{Binding User.Name}"
-                           Margin="10,0,0,0"
-                           Width="150"/>
+            <!-- Кнопка удаления -->
+            <StackPanel Orientation="Horizontal" Grid.Row="1" Margin="0,0,0,5">
+                <Button Content="Удалить из группы"
+                        Width="140"
+                        Click="RemoveFromGroup_Click"/>
+            </StackPanel>
 
-                        <TextBlock Text="{Binding User.Login}"
-                           Margin="10,0,0,0"
-                           Width="120"/>
+            <!-- Список участников -->
+            <ListView Grid.Row="2"
+                      ItemsSource="{Binding UserGroups}"
+                      SelectedItem="{Binding SelectedUserGroup, Mode=TwoWay}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{Binding User.Id}" Width="60"/>
 
-                        <TextBlock Text="{Binding User.Email}"
-                           Margin="10,0,0,0"
-                           Width="200"/>
+                            <TextBlock Text="{Binding User.Name}"
+                                       Width="150"
+                                       Margin="10,0,0,0"/>
 
-                        <TextBlock Text="{Binding JoinedAt, StringFormat=d}"
-                           Margin="10,0,0,0"
-                           Width="100"/>
+                            <TextBlock Text="{Binding User.Login}"
+                                       Width="120"
+                                       Margin="10,0,0,0"/>
 
-                        <CheckBox IsChecked="{Binding IsModerator}"
-                          IsEnabled="False"
-                          Margin="10,0,0,0"
-                          VerticalAlignment="Center"/>
-                    </StackPanel>
-                </DataTemplate>
-            </ListView.ItemTemplate>
+                            <TextBlock Text="{Binding User.Email}"
+                                       Width="200"
+                                       Margin="10,0,0,0"/>
 
-        </ListView>
+                            <TextBlock Text="{Binding JoinedAt, StringFormat=d}"
+                                       Width="120"
+                                       Margin="10,0,0,0"/>
+
+                            <CheckBox IsChecked="{Binding IsModerator}"
+                                      IsEnabled="False"
+                                      Width="80"
+                                      Margin="10,0,0,0"
+                                      VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
     </Grid>
 </Page>

@@ -22,10 +22,10 @@ namespace WpfApp_DataBinding_EF.Data
             //optionsBuilder.UseSqlServer(
             //    "Server=sql.ects;Database=UsersDb_Eremeev;User Id=student_06;Password=student_06;TrustServerCertificate=True;");
 
-            //optionsBuilder.UseSqlServer(
-            //    "Server=sql.ects;Database=UsersDb_Eremeev;User Id=student_06;Password=student_06;TrustServerCertificate=True;");
             optionsBuilder.UseSqlServer(
-               "Server=localhost;Database=UsersDb_Eremeev;Trusted_Connection=True;TrustServerCertificate=True;");
+                "Server=sql.ects;Database=UsersDb_Eremeev.1;User Id=student_02;Password=student_02;TrustServerCertificate=True;");
+            //optionsBuilder.UseSqlServer(
+            //   "Server=localhost;Database=UsersDb_Eremeev;Trusted_Connection=True;TrustServerCertificate=True;");
 
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)

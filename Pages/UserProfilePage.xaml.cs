@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,6 +15,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using WpfApp_DataBinding_EF.Models;
+using WpfApp_DataBinding_EF.Services;
 
 namespace WpfApp_DataBinding_EF.Pages
 {
@@ -23,9 +26,18 @@ namespace WpfApp_DataBinding_EF.Pages
         public UserProfilePage(User user)
         {
             InitializeComponent();
-            _user = user;
 
-            // Важно: User.UserInterestGroups и Include в UsersService
+            // берём общий контекст
+            var db = BaseDbService.Instance.Context;
+
+            // подгружаем пользователя заново из БД с актуальными данными
+            _user = db.Users
+                .Include(u => u.Role)
+                .Include(u => u.Userprofile)
+                .Include(u => u.UserInterestGroups)
+                    .ThenInclude(uig => uig.InterestGroup)
+                .First(u => u.Id == user.Id);
+
             DataContext = _user;
         }
 
@@ -40,4 +52,3 @@ namespace WpfApp_DataBinding_EF.Pages
         }
     }
 }
-

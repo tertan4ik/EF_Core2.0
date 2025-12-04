@@ -15,12 +15,20 @@ using System.Windows.Shapes;
 using WpfApp_DataBinding_EF.Models;
 using WpfApp_DataBinding_EF.Services;
 
+using System.Collections.ObjectModel;
+
 namespace WpfApp_DataBinding_EF.Pages
 {
     public partial class InterestGroupMembersPage : Page
     {
         private readonly InterestGroup _group;
         private readonly InterestGroupsService _service = new InterestGroupsService();
+        private readonly UserInterestGroupsService _userGroupsService = new UserInterestGroupsService();
+
+        public ObservableCollection<UserInterestGroup> UserGroups => _group.UserGroups;
+        public string Title => _group.Title;
+
+        public UserInterestGroup? SelectedUserGroup { get; set; }
 
         public InterestGroupMembersPage(InterestGroup group)
         {
@@ -28,15 +36,32 @@ namespace WpfApp_DataBinding_EF.Pages
 
             _group = group;
 
-            // Подгружаем участников из БД (UserGroups + User)
             _service.LoadUsers(_group);
 
-            DataContext = _group;
+            DataContext = this;
         }
 
         private void Back_Click(object sender, RoutedEventArgs e)
         {
             NavigationService?.GoBack();
+        }
+
+        private void RemoveFromGroup_Click(object sender, RoutedEventArgs e)
+        {
+            if (SelectedUserGroup == null)
+            {
+                MessageBox.Show("Выберите участника для удаления");
+                return;
+            }
+
+            if (MessageBox.Show("Удалить пользователя из группы?",
+                                "Подтверждение",
+                                MessageBoxButton.YesNo,
+                                MessageBoxImage.Question) != MessageBoxResult.Yes)
+                return;
+
+            _userGroupsService.Remove(SelectedUserGroup);
+            UserGroups.Remove(SelectedUserGroup);
         }
     }
 }

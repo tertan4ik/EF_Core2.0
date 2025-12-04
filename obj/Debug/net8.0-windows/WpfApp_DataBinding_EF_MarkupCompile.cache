@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\pavel\OneDrive\Desktop\TRPO\EF_Core2.0\obj\Debug\net8.0-windows\
+C:\Users\st310-02\Desktop\Новая папка\EF_Core2.0\obj\Debug\net8.0-windows\
 WpfApp_DataBinding_EF
 none
 false
-TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
-C:\Users\pavel\OneDrive\Desktop\TRPO\EF_Core2.0\App.xaml
+TRACE;DEBUG;NET;NET8_0;NETCOREAPP
+C:\Users\st310-02\Desktop\Новая папка\EF_Core2.0\App.xaml
 12566819698
 
 31-614614941
-231-1958702679
+231-225684535
 MainWindow.xaml;Pages\AddUserToInterestGroupPage.xaml;Pages\InterestGroupFormPage.xaml;Pages\InterestGroupMembersPage.xaml;Pages\InterestGroupsPage.xaml;Pages\MainPage.xaml;Pages\RolesPage.xaml;Pages\UserFormPage.xaml;Pages\UserProfilePage.xaml;Styles\Button.xaml;Styles\Panels.xaml;Styles\Text.xaml;
 
 False

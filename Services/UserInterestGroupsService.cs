@@ -1,12 +1,14 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-using System;
 using WpfApp_DataBinding_EF.Data;
 using WpfApp_DataBinding_EF.Models;
+using WpfApp_DataBinding_EF.Migrations;
+using System.Collections.ObjectModel;
+using System.Data;
 
 namespace WpfApp_DataBinding_EF.Services
 {
@@ -14,23 +16,18 @@ namespace WpfApp_DataBinding_EF.Services
     {
         private readonly AppDbContext _db = BaseDbService.Instance.Context;
 
-        public void Add(UserInterestGroup link)
-        {
-            var entity = new UserInterestGroup
-            {
-                UserId = link.UserId,
-                InterestGroupId = link.InterestGroupId,
-                JoinedAt = link.JoinedAt,
-                IsModerator = link.IsModerator
-            };
-
-            _db.UsersInterestGroups.Add(entity);
-            _db.SaveChanges();
-        }
-
+        // Добавление связи User–InterestGroup с проверкой на дубль
         public void Add(User user, InterestGroup group, DateTime joinedAt, bool isModerator)
         {
-            var link = new UserInterestGroup
+            // если такая связь уже есть – ничего не делаем
+            var exists = _db.UsersInterestGroups.Any(uig =>
+                uig.UserId == user.Id &&
+                uig.InterestGroupId == group.Id);
+
+            if (exists)
+                return;
+
+            var entity = new UserInterestGroup
             {
                 UserId = user.Id,
                 InterestGroupId = group.Id,
@@ -38,7 +35,23 @@ namespace WpfApp_DataBinding_EF.Services
                 IsModerator = isModerator
             };
 
-            Add(link);
+            _db.UsersInterestGroups.Add(entity);
+            _db.SaveChanges();
+        }
+
+        // Удаление связи
+        public void Remove(UserInterestGroup link)
+        {
+            var entity = _db.UsersInterestGroups
+                .FirstOrDefault(uig =>
+                    uig.UserId == link.UserId &&
+                    uig.InterestGroupId == link.InterestGroupId);
+
+            if (entity != null)
+            {
+                _db.UsersInterestGroups.Remove(entity);
+                _db.SaveChanges();
+            }
         }
     }
 }
