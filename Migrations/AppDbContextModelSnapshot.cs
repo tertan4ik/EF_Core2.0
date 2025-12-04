@@ -22,6 +22,27 @@ namespace WpfApp_DataBinding_EF.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("WpfApp_DataBinding_EF.Models.InterestGroup", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("InterestGroups");
+                });
+
             modelBuilder.Entity("WpfApp_DataBinding_EF.Models.Role", b =>
                 {
                     b.Property<int>("Id")
@@ -79,6 +100,27 @@ namespace WpfApp_DataBinding_EF.Migrations
                     b.ToTable("Users");
                 });
 
+            modelBuilder.Entity("WpfApp_DataBinding_EF.Models.UserInterestGroup", b =>
+                {
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("InterestGroupId")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("IsModerator")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime>("JoinedAt")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("UserId", "InterestGroupId");
+
+                    b.HasIndex("InterestGroupId");
+
+                    b.ToTable("UsersInterestGroups");
+                });
+
             modelBuilder.Entity("WpfApp_DataBinding_EF.Models.UserProfile", b =>
                 {
                     b.Property<int>("Id")
@@ -119,6 +161,25 @@ namespace WpfApp_DataBinding_EF.Migrations
                     b.Navigation("Role");
                 });
 
+            modelBuilder.Entity("WpfApp_DataBinding_EF.Models.UserInterestGroup", b =>
+                {
+                    b.HasOne("WpfApp_DataBinding_EF.Models.InterestGroup", "InterestGroup")
+                        .WithMany("UserGroups")
+                        .HasForeignKey("InterestGroupId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("WpfApp_DataBinding_EF.Models.User", "User")
+                        .WithMany("UserInterestGroups")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("InterestGroup");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("WpfApp_DataBinding_EF.Models.UserProfile", b =>
                 {
                     b.HasOne("WpfApp_DataBinding_EF.Models.User", "User")
@@ -130,6 +191,11 @@ namespace WpfApp_DataBinding_EF.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("WpfApp_DataBinding_EF.Models.InterestGroup", b =>
+                {
+                    b.Navigation("UserGroups");
+                });
+
             modelBuilder.Entity("WpfApp_DataBinding_EF.Models.Role", b =>
                 {
                     b.Navigation("Users");
@@ -137,6 +203,8 @@ namespace WpfApp_DataBinding_EF.Migrations
 
             modelBuilder.Entity("WpfApp_DataBinding_EF.Models.User", b =>
                 {
+                    b.Navigation("UserInterestGroups");
+
                     b.Navigation("Userprofile")
                         .IsRequired();
                 });

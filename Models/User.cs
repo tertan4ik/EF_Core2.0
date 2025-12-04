@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
@@ -140,6 +141,23 @@ namespace WpfApp_DataBinding_EF.Models
                 _role = value;
             }
         }
+
+        private ObservableCollection<UserInterestGroup> _userInterestGroups =
+            new ObservableCollection<UserInterestGroup>();
+
+        public ObservableCollection<UserInterestGroup> UserInterestGroups
+        {
+            get => _userInterestGroups;
+            set
+            {
+                if (_userInterestGroups != value)
+                {
+                    _userInterestGroups = value;
+                    OnPropertyChanged();
+                }
+            }
+        }
+
         public event PropertyChangedEventHandler? PropertyChanged;
 
         protected void OnPropertyChanged([CallerMemberName] string? propName = null)

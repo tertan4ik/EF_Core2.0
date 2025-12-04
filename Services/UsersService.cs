@@ -1,11 +1,12 @@
 
-﻿using System.Collections.ObjectModel;
-using System.Linq;
-using WpfApp_DataBinding_EF.Data;
 ﻿using Microsoft.EntityFrameworkCore;
+﻿using System.Collections.ObjectModel;
 using System.Collections.ObjectModel;
 using System.Linq;
-
+using System.Linq;
+using System.Windows;
+using System.Windows.Media.Imaging;
+using WpfApp_DataBinding_EF.Data;
 using WpfApp_DataBinding_EF.Models;
 
 namespace WpfApp_DataBinding_EF.Services
@@ -28,6 +29,8 @@ namespace WpfApp_DataBinding_EF.Services
             var users = _db.Users
                 .Include(u => u.Role)
                 .Include(u => u.Userprofile)
+                .Include(u => u.UserInterestGroups)
+                    .ThenInclude(uig => uig.InterestGroup)
                 .AsNoTracking()
                 .ToList();
 
@@ -35,6 +38,7 @@ namespace WpfApp_DataBinding_EF.Services
             foreach (var u in users)
                 Users.Add(u);
         }
+
 
         public int Commit() => _db.SaveChanges();
 
@@ -62,7 +66,7 @@ namespace WpfApp_DataBinding_EF.Services
 
                 entity.Userprofile = new UserProfile
                 {
-                    AvatarUrl = p.AvatarUrl,
+                    AvatarUrl = AvatarUrlConvert(p.AvatarUrl),
                     Name = p.Name,
                     Phone = p.Phone,
                     Birthday = p.Birthday,
@@ -78,6 +82,29 @@ namespace WpfApp_DataBinding_EF.Services
             Users.Add(entity);
         }
 
+        public string AvatarUrlConvert(string Avatarurl)
+        {
+            try
+            {
+                if (Avatarurl != null&&Avatarurl!="")
+                {
+                    BitmapImage bitmap = new BitmapImage();
+                    bitmap.BeginInit();
+                    bitmap.UriSource = new Uri(Avatarurl, UriKind.Absolute);
+                    bitmap.EndInit();
+                    return bitmap.ToString();
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            catch
+            {
+                return null;
+            }
+            
+        }
 
         public void UpdateUser(User formUser)
         {

@@ -1,0 +1,73 @@
+﻿<Page x:Class="WpfApp_DataBinding_EF.Pages.InterestGroupMembersPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp_DataBinding_EF.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="InterestGroupMembersPage">
+
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Верхняя панель -->
+        <StackPanel Orientation="Horizontal" Grid.Row="0" Margin="0,0,0,10">
+            <Button Content="Назад"
+                    Width="80"
+                    Margin="0,0,10,0"
+                    Click="Back_Click"/>
+            <TextBlock Text="{Binding Title}"
+                       FontSize="16"
+                       FontWeight="Bold"
+                       VerticalAlignment="Center"/>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="1" Margin="0,0,0,3">
+            <TextBlock Text="ID" Width="60"/>
+            <TextBlock Text="Имя" Width="150" Margin="10,0,0,0"/>
+            <TextBlock Text="Логин" Width="120" Margin="10,0,0,0"/>
+            <TextBlock Text="Email" Width="200" Margin="10,0,0,0"/>
+            <TextBlock Text="Дата вступления" Width="120" Margin="10,0,0,0"/>
+            <TextBlock Text="Модератор" Width="80" Margin="10,0,0,0"/>
+        </StackPanel>
+      
+        <ListView Grid.Row="2"
+          ItemsSource="{Binding UserGroups}">
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding User.Id}" Width="60"/>
+
+                        <TextBlock Text="{Binding User.Name}"
+                           Margin="10,0,0,0"
+                           Width="150"/>
+
+                        <TextBlock Text="{Binding User.Login}"
+                           Margin="10,0,0,0"
+                           Width="120"/>
+
+                        <TextBlock Text="{Binding User.Email}"
+                           Margin="10,0,0,0"
+                           Width="200"/>
+
+                        <TextBlock Text="{Binding JoinedAt, StringFormat=d}"
+                           Margin="10,0,0,0"
+                           Width="100"/>
+
+                        <CheckBox IsChecked="{Binding IsModerator}"
+                          IsEnabled="False"
+                          Margin="10,0,0,0"
+                          VerticalAlignment="Center"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+
+        </ListView>
+    </Grid>
+</Page>

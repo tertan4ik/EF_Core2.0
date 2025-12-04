@@ -70,6 +70,19 @@ namespace WpfApp_DataBinding_EF.Pages
                 {
                     NavigationService?.Navigate(new RolesPage());
                 }
+
+        private void ListView_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            if (Service.SelectedUser == null)
+                return;
+
+            NavigationService?.Navigate(new UserProfilePage(Service.SelectedUser));
+        }
+
+        private void GoToInterestsGroups(object sender, RoutedEventArgs e)
+        {
+            NavigationService?.Navigate(new InterestGroupsPage());
+        }
     }
  }
 

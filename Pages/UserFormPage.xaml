@@ -94,10 +94,17 @@
             <Button Content="Назад" Click="Back"/>
         </StackPanel>
         <StackPanel Grid.Column="1">
-            <Image x:Name="Avatar"/>
+            <Image x:Name="Avatar" Source="{Binding Userprofile.AvatarUrl}"/>
             <Label Content="AvatarUrl"/>
-            <TextBox Text="{Binding  Userprofile.AvatarUrl, UpdateSourceTrigger=PropertyChanged}"/>
-            <Button Content="Загрузить аватар" Click="Button_Click"/>
+            <TextBox>
+                <TextBox.Text>
+                    <Binding Path="Userprofile.AvatarUrl" UpdateSourceTrigger="PropertyChanged">
+                        <Binding.ValidationRules>
+                            <validators:Imagevalidation/>
+                        </Binding.ValidationRules>
+                    </Binding>
+                </TextBox.Text>
+            </TextBox>
         </StackPanel>
 
     </Grid>

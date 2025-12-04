@@ -97,7 +97,11 @@ namespace WpfApp_DataBinding_EF.Pages
                 return;
             }
             if (_isEdit)
+            {
+                _user.Userprofile.AvatarUrl = AvatarUrlConvert(_user.Userprofile.AvatarUrl);
                 _service.UpdateUser(_user);
+            }
+                
             else
                 _service.AddUser(_user);
 
@@ -136,7 +140,29 @@ namespace WpfApp_DataBinding_EF.Pages
             catch { MessageBox.Show("Something wrong"); }
         }
 
+        public string AvatarUrlConvert(string Avatarurl)
+        {
+            try
+            {
+                if (Avatarurl != null)
+                {
+                    BitmapImage bitmap = new BitmapImage();
+                    bitmap.BeginInit();
+                    bitmap.UriSource = new Uri(Avatarurl, UriKind.Absolute);
+                    bitmap.EndInit();
+                    return bitmap.ToString();
+                }
+                else
+                {
+                    return null;
+                }
+            }
+            catch
+            {
+                return null;
+            }
 
- 
+        }
+
     }
 }
